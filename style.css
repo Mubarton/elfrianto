@@ -1,0 +1,133 @@
+/* Reset Padding Margin */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* Smooth Scroll */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Menentukan Warna */
+:root {
+    --colorPrimer: #7ACABB;
+    --colorSecondary: #CA7A89;
+}
+
+/* Container */
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;    
+}
+
+/* Navbar */
+#navbar {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+    background-color: var(--colorPrimer);
+    position: fixed;
+    top: 0;
+    transition: top 0.3s;
+}
+
+#navbar > a {
+    text-decoration: none;
+    color: var(--colorSecondary);
+    padding: 15px;
+    display: block;
+}
+
+#navbar > a:hover {
+    background-color: var(--colorSecondary);
+    color: var(--colorPrimer);
+}
+
+/* Hero */
+#hero {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 60px;
+    background-color: var(--colorPrimer);
+    text-align: center;
+}
+
+#hero > img {
+    margin-bottom: 20px;
+    border-radius: 300px;
+    height: 30vh;
+    width: auto;
+}
+
+/* Tentang Saya */
+#about {
+    padding-top: 30px;
+    flex-direction: column;
+    height: 300px;
+}
+
+#about > p {
+    padding: 30px;
+}
+
+/* Kontak */
+#contact {
+    row-gap: 0;
+    padding: 0px 30px 10px 30px;
+    background-color: var(--colorPrimer);
+    margin-top: -5px;
+}
+
+#contact > div > h1 {
+    margin: 50px;
+}
+
+.sosmed {
+    display: flex;
+    align-items: center;
+    background-color: var(--colorPrimer);
+    text-align: center;
+    margin: 10px;
+    border: 1px solid black;
+    border-radius: 25px;
+}
+
+.sosmed > a {
+    padding: 25px 50px;
+    text-decoration: none;
+    color: var(--colorSecondary);
+}
+
+.sosmed > a > img {
+    padding-bottom: 10px;
+}
+
+.sosmed:hover {
+    background-color: var(--colorSecondary);
+}
+
+.sosmed > a:hover {
+    color: var(--colorPrimer);
+}
+
+/* Footer */
+footer {
+    padding: 30px;
+    text-align: right;
+}
+
+/* Warna Ombak */
+svg > path {
+    fill: var(--colorPrimer);
+}
+
+@media (max-width: 500px) {
+    #contact > .container {
+        flex-direction: column;
+    }
+}

@@ -22,6 +22,10 @@ html {
     justify-content: space-around;    
 }
 
+.container > h1 {
+    margin: 50px 0;
+}
+
 /* Navbar */
 #navbar {
     display: flex;
@@ -66,25 +70,33 @@ html {
 
 /* Tentang Saya */
 #about {
-    padding-top: 30px;
     flex-direction: column;
     height: 300px;
 }
 
 #about > p {
-    padding: 30px;
+    padding: 0 30px;
+}
+
+/* Pendidikan */
+#education {
+    background-color: var(--colorPrimer);
+    margin-top: -5px;
+}
+
+.educationItem {
+    text-align: center;
+}
+
+.educationItem > img {
+    width: 200px;
+    padding: 10px;
 }
 
 /* Kontak */
 #contact {
     row-gap: 0;
     padding: 0px 30px 10px 30px;
-    background-color: var(--colorPrimer);
-    margin-top: -5px;
-}
-
-#contact > div > h1 {
-    margin: 50px;
 }
 
 .sosmed {
@@ -119,6 +131,8 @@ html {
 footer {
     padding: 30px;
     text-align: right;
+    background-color: var(--colorPrimer);
+    margin-top: -10;
 }
 
 /* Warna Ombak */
@@ -127,6 +141,10 @@ svg > path {
 }
 
 @media (max-width: 500px) {
+    #education > .container {
+        flex-direction: column;
+    }
+
     #contact > .container {
         flex-direction: column;
     }

@@ -3,18 +3,28 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Karya Ilmiah</title>
+    <title>Elfrianto Nst</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <!-- Navbar -->
     <div id="navbar">
-        <a href="/">Home</a>
-        <a href="/#about">About</a>
-        <a href="/#education">Education</a>
-        <a href="#">Activity</a>
-        <a href="#">Profile</a>
-        <a href="#">Contact</a>
+        <a href="/">Beranda</a>
+        <a href="#">Kontak</a>
+        <div class="dropdown navdrop">
+            <a href="karya-ilmiah/index.html" class="dropbtn">Aktivitas</a>
+            <div class="dropdown-content">
+                <a href="#">Gallery</a>
+                <a href="#">Kegiatan</a>
+            </div>
+        </div>
+        <div class="dropdown navdrop">
+            <a href="karya-ilmiah/index.html" class="dropbtn">History</a>
+            <div class="dropdown-content">
+                <a href="/#education">Education</a>
+                <a href="#">Work Experience</a>
+            </div>
+        </div>
         <div class="dropdown navdrop">
             <a href="#" class="dropbtn">Karya Ilmiah</a>
             <div class="dropdown-content">
@@ -25,7 +35,6 @@
                 <a href="#">Buku</a>
             </div>
         </div>
-        <a href="#">Gallery</a>
     </div>
 
     <div id="navMobile">
@@ -61,5 +70,20 @@
         </div>
     </div>
     <!-- Navbar END -->
+
+    <!-- Account -->
+    <div class="container" id="account">
+        <div class="cardAccount">
+            <img src="/assets/googleSchoolar.png" alt="">
+            <p>GOOGLE SCHOOLAR</p>
+            <a href="https://scholar.google.co.id/citations?user=83Pc2QMAAAAJ&hl=id" target="_blank"><button>Buka</button></a>
+        </div>
+        <div class="cardAccount">
+            <img src="/assets/sinta.png" alt="">
+            <p>SINTA</p>
+            <a href="https://sinta.kemdikbud.go.id/authors/profile/5977404" target="_blank"><button>Buka</button></a>
+        </div>
+    </div>
+    <!-- Account END -->
 </body>
 </html>

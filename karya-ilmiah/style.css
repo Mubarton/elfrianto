@@ -285,7 +285,7 @@ html {
     }
 
     /* Responsive Flex Container */
-    #account > .container {
+    #account {
         flex-direction: column;
         gap: 10px;
     }

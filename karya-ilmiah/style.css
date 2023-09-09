@@ -12,6 +12,8 @@ html {
 :root {
     --colorPrimer: #7ACABB;
     --colorSecondary: #CA7A89;
+    --colorBlack: #121212;
+    --colorWhite: #fdfff5;
 }
 
 /* Container */
@@ -98,6 +100,63 @@ html {
 
 .dropdown-content {
     top: 100%;
+}
+
+/* Account */
+#account {
+    padding: 60px;
+    background-color: var(--colorPrimer);
+    min-height: 500px;
+}
+
+#account > h1 {
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+/* Card */
+.cardAccount {
+    border: black 2px solid;
+    border-radius: 25px;
+    padding: 50px 25px;
+    background-color: var(--colorPrimer);
+    text-align: center;
+}
+
+.cardAccount > img {
+    width: 150px;
+    aspect-ratio: 4/3;
+    object-fit: contain;
+    padding-bottom: 20px;
+}
+
+.cardAccount > p {
+    padding: 10px 0px;
+}
+
+.cardAccount > a  {
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+}
+
+.cardAccount > a > button {
+    padding: 10px;
+    background-color: var(--colorSecondary);
+    border-radius: 10px;
+    color: var(--colorWhite);
+    cursor: pointer;
+    display: none;
+}
+
+.cardAccount > a > button:hover {
+    background-color: var(--colorPrimer);
+    color: var(--colorSecondary);
+}
+
+.cardAccount:hover button {
+    display: block;
+    position: absolute;
 }
 
 /* Responsive */
@@ -226,11 +285,8 @@ html {
     }
 
     /* Responsive Flex Container */
-    #education > .container {
+    #account > .container {
         flex-direction: column;
-    }
-
-    #contact > .container {
-        flex-direction: column;
+        gap: 10px;
     }
 }

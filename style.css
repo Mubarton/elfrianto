@@ -316,13 +316,4 @@ svg > path {
     #hero {
         padding-top: 70px;
     }
-
-    /* Responsive Flex Container */
-    #education > .container {
-        flex-direction: column;
-    }
-
-    #contact > .container {
-        flex-direction: column;
-    }
 }

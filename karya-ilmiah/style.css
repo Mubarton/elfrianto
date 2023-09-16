@@ -159,6 +159,11 @@ html {
     position: absolute;
 }
 
+ul {
+    padding: 50px;
+    list-style: disc;
+}
+
 /* Responsive */
 /* Tablet*/
 @media screen and (max-width: 768px) {
